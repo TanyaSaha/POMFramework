@@ -1,11 +1,18 @@
 package pages;
 
+import org.openqa.selenium.By;
+
 public class LoginDemoPage {
 
-	public static void main(String[] args) {
-		int a = 10;
-		System.out.println(a);
+		
+		private By emailId = By.name("login");
+		
+		
+		public void login()
+		{
+			System.out.println("Do Login");
+		}
 
 	}
 
-}
+
