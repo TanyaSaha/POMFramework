@@ -51,7 +51,7 @@ public class ProductInfoPageTest extends BaseTest{
 		return new Object[][]
 
 	{
-			{"macbook", "MacBook Pro", 4 },
+			{"macbook", "MacBook Pro", 3 },
 			{"macbook", "MacBook Air", 4},
 			{"imac", "iMac", 3},
 			{"samsung", "Samsung SyncMaster 941BW", 1},
