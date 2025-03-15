@@ -26,7 +26,7 @@ public class LoginPage {
 	private By emailId = By.id("input-email");
 	private By password = By.id("input-password");
 	private By loginBtn = By.xpath("//input[@value='Login']");
-	private By forgotPwdLink = By.linkText("Forgotten Password");
+	private By forgotPwdLink = By.linkText("Forgotten Password11");
 	
 	// 2. Public page actions - methods (features)
 	@Step("Get the Login Page Title")
