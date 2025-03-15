@@ -29,12 +29,12 @@ public class LoginPageTest extends BaseTest {
 	@Test
 	public void loginPageTitleTest()   
 	{
-		ChainTestListener.log("checking login page Title ...");
+		ChainTestListener.log("Verify Login Page Title");
 		String actTitle = loginPage.getLoginPageTitle();
 		Assert.assertEquals(actTitle, AppConstants.LOGIN_PAGE_TITLE, AppError.TITLE_NOT_FOUND_ERROR);
 	}	
 	
-	@Description("\"checking login page url ....")
+	@Description("checking forgot password link....")
 	@Severity(SeverityLevel.MINOR)
 	@Test
 	public void loginPageURLTest()
@@ -43,7 +43,7 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertTrue(actURL.contains(AppConstants.LOGIN_PAGE_URL_FRACTION), AppError.URL_NOT_FOUND_ERROR);
 	}
 	
-	@Description("checking forgot password link...")
+	@Description("checking login page title....")
 	@Severity(SeverityLevel.CRITICAL)
 	@Test
 	public void forgotPwdLinkExistTest()

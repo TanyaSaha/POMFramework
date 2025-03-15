@@ -13,6 +13,7 @@ import com.qa.opencart.constants.AppError;
 
 public class HomePageTest extends BaseTest{
 	
+
 	@BeforeClass
 	public void HomePagesetUp()
 	{
@@ -24,6 +25,7 @@ public class HomePageTest extends BaseTest{
 	{
 		String actTitle = homePage.getHomePageTitle();
 		Assert.assertEquals(actTitle, AppConstants.HOME_PAGE_TITLE, AppError.TITLE_NOT_FOUND_ERROR);
+	
 	}
 	
 	@Test
@@ -32,6 +34,9 @@ public class HomePageTest extends BaseTest{
 		String actURL = homePage.getHomePageURL();
 		Assert.assertTrue(actURL.contains(AppConstants.HOME_PAGE_URL_FRACTION), AppError.URL_NOT_FOUND_ERROR);
 	}
+	
+	
+
 	
 	@Test
 	public void logoutLinkExistTest()
